@@ -9,8 +9,9 @@
 /* цвет граниы хедера: #ECECEC */
 /* цвет рамочки подписи в порфолио: #EEEEEE */
 /* прозрачный цвет фона: #C4C4C4 */
-/* цвет иконок: #757575 */
+/* цвет иконок шапки: #757575 */
 /* фон иконок: #F5F4FA */
+/* цвет иконок: #AFB1B8 */
 
 :root {
   --primary-text-color: #757575;
@@ -24,8 +25,9 @@
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
   --hero-bg-alfa-color: #c4c4c4;
-  --icon-color: #757575;
+  --icon-color-header: #757575;
   --icon-bg-color: #F5F4FA;
+  --icon-color: #AFB1B8;
 }
 
 /* основные */
@@ -197,14 +199,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 11px;
-  fill:var(--icon-color);
+  fill:var(--icon-color-header);
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-left: 30px;
-  fill:var(--icon-color);
+  fill:var(--icon-color-header);
 }
 
 .icon-mail:hover,
@@ -290,6 +292,10 @@ border-radius: 4px;
   margin-right: 30px;
 }
 
+.image-item:last-child{
+  margin-right: 0;
+}
+
 .qualities {
   padding-bottom: 0px;
 }
@@ -372,13 +378,15 @@ border-radius: 4px;
   padding-right: auto;
 }
 
-.sociall-icons-item {
+.social-icons-item {
   display: inline-flex;
 }
 .icon {
   width: 20px;
   height: 20px;
-}
+  fill: var(--icon-color);
+} 
+
 
 .ability,
 .comunity {
