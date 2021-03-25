@@ -1,15 +1,16 @@
-/*основной цвет: #757575*/
-/*вторичный цвет:#212121*/
-/*акцент: #2196f3*
-/*белый: #fff*/
-/*основной цвет фона: #e5e5e5*/
-/*вторичный цвет фона: #F5F4FA*/
-/*цвет логотипа: №000*
+/*основной цвет: #757575 */
+/*вторичный цвет: #212121 */
+/*акцент: #2196f3 */
+/*белый: #fff */
+/*основной цвет фона: #e5e5e5 */
+/*вторичный цвет фона: #F5F4FA */
+/*цвет логотипа: #000 */
 /* фон секции героя: #2F303A;*/
 /* цвет граниы хедера: #ECECEC */
 /* цвет рамочки подписи в порфолио: #EEEEEE */
 /* прозрачный цвет фона: #C4C4C4 */
 /* цвет иконок: #757575 */
+/* фон иконок: #F5F4FA */
 
 :root {
   --primary-text-color: #757575;
@@ -24,6 +25,7 @@
   --portfolio-border-color: #eeeeee;
   --hero-bg-alfa-color: #c4c4c4;
   --icon-color: #757575;
+  --icon-bg-color: #F5F4FA;
 }
 
 /* основные */
@@ -264,6 +266,28 @@ img {
 section {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+
+.image-list{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.image-item{
+  display: inline-flex;
+margin-right: -30px;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+}
+
+.image-list > .image-item{
+  flex-basis: calc(100%/4-30px);
+  height: 120px;
+  width: 270px;
+  background-color: var(--icon-bg-color);
+  margin-right: 30px;
 }
 
 .qualities {
