@@ -374,20 +374,28 @@ border-radius: 4px;
   background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 19px;
-  padding-left: auto;
-  padding-right: auto;
+  /* padding-left: auto;
+  padding-right: auto; */
+  text-align: center;
 }
 
 .social-icons-item {
   display: inline-flex;
 }
-.icon {
+.social-icons .icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
 } 
 
-/* ВКЛЮЧИ ВИДЕО ЮЛИ */
+.social-icons-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white-color);
+}
 
 
 .ability,
@@ -411,7 +419,6 @@ border-radius: 4px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
-  text-align: center;
   padding-bottom: 10px;
 }
 .profession {
