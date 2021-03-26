@@ -384,8 +384,6 @@ section {
   background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 19px;
-  /* padding-left: auto;
-  padding-right: auto; */
   text-align: center;
 }
 
@@ -476,33 +474,51 @@ section {
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
-  text-align: center;
 }
 
 .clients-list {
-  display: inline-flex;
-  text-align: center;
-}
+  margin: 0;
+  padding: 0;
 
-
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.logo-icon {
-  width: 170px;
-  height: 90px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.clients-item{
+  flex-basis: calc(100%-6*30px)/6;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  display: inline-flex;
+
   align-items: center;
-  background-color: var(--primary-bg-color);
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 
 .logo-icon .logo {
+  display: block;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
   align-items: center;
-  fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  color: var(--icon-color);
+  border-radius: 4px;
+ /* padding: 20px 63px 21px 63px; */
+}
+
+
+.logo{
+ fill: currentColor;
+ background-color:var(--primary-white-color);
+}
+
+.logo-icon:hover,
+.logo-icon:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* подвал */
