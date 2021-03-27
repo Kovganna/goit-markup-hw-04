@@ -505,8 +505,8 @@ section {
   margin-left: 30px;
 }
 
-.clients-thumb:hover .client-icon,
-.clients-thumb:focus .client-icon {
+.clients-item:hover .clients-thumb,
+.clients-item:focus .client-thumb {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
