@@ -538,14 +538,21 @@ section {
 
 /* подвал */
 
-footer {
+footer{
   background-color: var(--hero-bg-color);
+}
+
+.footer-block .container {
   padding-bottom: 60px;
   padding-top: 60px;
   display: flex;
   padding-left: 70px;
-  
 }
+
+.footer-tale {
+  padding-top: 12px;
+}
+
 
 .footer-link {
   color: inherit;
@@ -587,6 +594,8 @@ footer {
   padding-left: 0;
 }
 
+/* присоединяйтесь */
+
 .footer-titel{
   font-weight: 700px;
 font-size: 14px;
@@ -594,8 +603,10 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-white-color);
+margin-bottom: 30px;
 }
 
+/* иконки соц сетей в футуре */
 
 .footer-icon .icon-f {
   width: 20px;
@@ -633,24 +644,15 @@ color: var(--primary-white-color);
   fill: var(--primary-white-color);
 }
 
+
 .social-footer{
-display: flex;
+  
+  display: flex;
 }
 
-.footer-icons{
-  margin: 0;
-  padding: 0;
+/* делаем таблицу в футуре */
 
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-right: -70px;
-}
 
-.footer-icons > .list-contacts{
-  flex-basis: calc((100% - 2 *70px)/2-70px);
-  margin-right: 70px;
-
-}
 
 
 /* Портфолио */
