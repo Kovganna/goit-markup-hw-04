@@ -201,14 +201,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 11px;
-  fill: var(--icon-color-header);
+  stroke: currentColor;
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-left: 30px;
-  fill: var(--icon-color-header);
+  stroke: currentColor;
 }
 
 .icon-mail:hover,
