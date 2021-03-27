@@ -234,19 +234,17 @@ img {
 
 hero {
   max-width: 1600px;
+  background-color: var(--bg-hero-second);
 }
 
 .hero-section {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: var(--bg-hero-second);
-  /* max-width: 1600px; */
 }
 
 .hero-foto {
   background-image: url(../img/bg.png), url(../img/hero.png);
-  /* max-width: 1600px; */
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -330,6 +328,7 @@ section {
   padding-top: 0;
   padding-bottom: 10px;
 }
+
 
 .list-text {
   margin: 0;
@@ -493,6 +492,7 @@ section {
   margin-left: 30px;
 
   display: inline-flex;
+  
 
   align-items: center;
 }
@@ -527,6 +527,9 @@ footer {
   background-color: var(--hero-bg-color);
   padding-bottom: 60px;
   padding-top: 60px;
+  display: flex;
+  padding-left: 70px;
+  
 }
 
 .footer-link {
@@ -537,11 +540,12 @@ footer {
   color: var(--title-text-color);
   margin-bottom: 20px;
   display: inline-block;
-}
+} 
 
 .studio-adress {
   margin: 0;
   padding: 0;
+  margin-right: 70px;
 }
 
 .location {
@@ -567,6 +571,72 @@ footer {
 .footer-list {
   padding-left: 0;
 }
+
+.footer-titel{
+  font-weight: 700px;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+}
+
+
+.footer-icon .icon-f {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+ 
+.footer-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+ 
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--accent-color);
+  border: 50%;
+}
+
+.footer-icon:hover .icon,
+.footer-icon:focus .icon {
+  fill: var(--primary-white-color);
+}
+
+.footer-item .icon-f{
+  fill: var(--primary-white-color);
+}
+
+.social-footer{
+display: flex;
+}
+
+.footer-icons{
+  margin: 0;
+  padding: 0;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-right: -70px;
+}
+
+.footer-icons > .list-contacts{
+  flex-basis: calc((100% - 2 *70px)/2-70px);
+  margin-right: 70px;
+
+}
+
 
 /* Портфолио */
 
@@ -641,10 +711,16 @@ footer {
   /* outline: 1px solid purple; */
 }
 
-.portfolio-img * {
+.portfolio-img:hover .img-content,
+.portfolio-img:focus .img-content {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   /* outline: 1px solid purple; */
 }
 
+.portfolio-img{
+  border: 1px solid var(--portfolio-border-color);
+}
 .img-content {
   padding: 20px 24px;
 }
