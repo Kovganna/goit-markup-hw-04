@@ -119,11 +119,10 @@ img {
   align-items: center;
 }
 
- .list-connection {
-  /* padding: 32px 0; */
+.list-connection {
   display: inline-flex;
   margin-left: auto;
-} 
+}
 
 .button {
   font-weight: 700;
@@ -241,12 +240,15 @@ img {
 }
 
 .hero-foto {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.png);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--bg-hero-second);
-  
 }
 
 .hero-titel {
@@ -277,29 +279,40 @@ section {
   padding-top: 94px;
 }
 
-.image-list {
-  display: flex;
+.punct-image {
+  width: 70px;
+  height: 70px;
+}
+
+.image-box {
   margin-bottom: 30px;
-}
-
-.image-item {
-  display: inline-flex;
-  margin-right: -30px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-}
-
-.image-list > .image-item {
-  flex-basis: calc(100% / 4-30px);
-  height: 120px;
   width: 270px;
+  height: 120px;
   background-color: var(--icon-bg-color);
-  margin-right: 30px;
 }
 
-.image-item:last-child {
-  margin-right: 0;
+.sputnic {
+  background-image: url(../img/sputnic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.time {
+  background-image: url(../img/time.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.computer {
+  background-image: url(../img/computer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.astronaut {
+  background-image: url(../img/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .qualities {
@@ -428,7 +441,6 @@ section {
   padding-top: 0;
 }
 
-
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -516,7 +528,6 @@ footer {
   padding-bottom: 60px;
   padding-top: 60px;
   display: flex;
-  padding-left: 70px;
 }
 
 .footer-tale {
@@ -566,7 +577,7 @@ footer {
 /* присоединяйтесь */
 
 .footer-titel {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -575,7 +586,7 @@ footer {
   margin-bottom: 30px;
 }
 
-/* иконки соц сетей в футуре */
+/* иконки соц сетей в футeре */
 
 .footer-icon .icon-f {
   width: 20px;
@@ -685,14 +696,11 @@ footer {
   margin-right: 30px;
 }
 
-.img-thumb {
-  /* outline: 1px solid purple; */
-}
-
-.portfolio-img:hover .img-content,
-.portfolio-img:focus .img-content {
+.portfolio-img:hover,
+.portfolio-img:focus {
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   /* outline: 1px solid purple; */
 }
 
