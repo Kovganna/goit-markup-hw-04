@@ -223,6 +223,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
 }
 
 /* герой */
@@ -285,30 +286,29 @@ section {
   width: 270px;
   height: 120px;
   background-color: var(--icon-bg-color);
+  border-radius: 4px;
 }
-
-.sputnic {
-  background-image: url(../img/sputnic.png);
+.astronaut ::before,
+/* .computer,
+.time,
+.sputnic */{ 
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.sputnic{
+  background-image: url(../img/sputnic.png);
+}
 .time {
   background-image: url(../img/time.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .computer {
   background-image: url(../img/computer.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .astronaut {
   background-image: url(../img/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .qualities {
