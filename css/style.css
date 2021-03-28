@@ -288,10 +288,10 @@ section {
   background-color: var(--icon-bg-color);
   border-radius: 4px;
 }
-.astronaut ::before,
-/* .computer,
+.astronaut,
+.computer,
 .time,
-.sputnic */{ 
+.sputnic{ 
   background-repeat: no-repeat;
   background-position: center;
 }
