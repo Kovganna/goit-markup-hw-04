@@ -119,11 +119,11 @@ img {
   align-items: center;
 }
 
-.list {
-  padding: 32px 0;
+/* .list {
+  /* padding: 32px 0; */
   display: inline-flex;
   margin-left: auto;
-}
+} */
 
 .button {
   font-weight: 700;
@@ -379,7 +379,7 @@ section {
 .list-person {
   background-color: var(--primary-white-color);
   padding-top: 30px;
-  padding-bottom: 19px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -428,10 +428,6 @@ section {
   padding-top: 0;
 }
 
-.person {
-  margin: 0;
-  padding: 0;
-}
 
 .name {
   font-weight: 500;
@@ -444,6 +440,7 @@ section {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .list-teem {
