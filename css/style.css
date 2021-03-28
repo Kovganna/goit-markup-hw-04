@@ -122,6 +122,7 @@ img {
 .list-connection {
   display: inline-flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .button {
@@ -174,8 +175,14 @@ img {
   color: var(--primary-white-color);
 }
 
-.list-connection a:hover,
-.list-connection a:focus,
+.list-item a:hover,
+.list-item a:focus,
+.list-item a:hover,
+.list-item a:focus,  
+.list-connection :hover .icon-mail,
+.list-connection :focus .icon-mail,
+.list-connection :hover .icon-tel,
+.list-connection :focus .icon-tel,
 .site-nav a:hover,
 .site-nav a:focus,
 .studio-adress :hover,
@@ -185,6 +192,7 @@ img {
 .footer-list a:hover,
 .footer-list a:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 .site-nav .current {
@@ -197,28 +205,16 @@ img {
 }
 
 .icon-mail {
-  width: 16px;
-  height: 12px;
   margin-right: 11px;
-  fill: var(--icon-color-header);
+  fill: var(--icon-color-header); 
+  justify-content: center; 
 }
 
 .icon-tel {
-  width: 10px;
-  height: 16px;
   margin-left: 30px;
+  margin-right: 10px;
   fill: var(--icon-color-header);
-}
-
-.icon-mail:hover,
-.icon-mail:focus,
-.icon-tel:hover,
-.icon-tel:focus {
-  fill: currentColor;
-}
-
-.list-tel {
-  margin-left: 10px;
+  justify-content: center;
 }
 
 .list-mail,
@@ -512,11 +508,13 @@ section {
   margin-left: 30px;
 }
 
-.clients-item:hover .clients-thumb,
-.clients-item:focus .client-thumb {
+.clients-item a:hover, 
+.clients-item a:focus{
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
+
 
 /* подвал */
 
